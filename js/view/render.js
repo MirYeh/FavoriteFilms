@@ -86,5 +86,5 @@ function renderTextView(value, elementIdentifier) {
 
 function getNode(elementIdentifier) {
     let element = document.querySelector(elementIdentifier);
-    return document.importNode(element, false);  // TODO: read about deep
+    return document.importNode(element, false);
 }

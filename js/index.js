@@ -1,7 +1,6 @@
 
 
 window.addEventListener('DOMContentLoaded', () => {
-    //storage.clear(); // TODO remove!
     main();
 });
 
