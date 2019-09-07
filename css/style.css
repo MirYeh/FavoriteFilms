@@ -1,0 +1,51 @@
+/* General */
+body {
+    background: #eef0db;
+    position: relative;
+    margin: 0px;
+}
+
+.icon {
+    height: 20px;
+    padding: 22px 10px;
+}
+
+.flex {
+    height: 100%;
+    display: flex;
+}
+
+/* Nav */
+
+.nav-wrapper {
+    background: #8a8a8a;
+}
+
+.nav-link-wrapper {
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.nav-link-wrapper:hover { /* pseudo-state */
+    border-bottom: 1px solid black;
+    border-color: 1px solid black;
+}
+
+.left-side {
+    margin-right: 20px;
+}
+
+
+/* Home */
+
+.film-header-wrapper {
+    
+}
+
+/* Favorites */
