@@ -37,15 +37,18 @@ body {
     border-color: 1px solid black;
 }
 
-.left-side {
-    margin-right: 20px;
-}
-
-
 /* Home */
 
-.film-header-wrapper {
-    
+.content-wrapper {
+    margin: 5px 20px;
+}
+
+.film-details-wrapper {
+    font-style: italic;
+}
+
+.film-description-wrapper {
+    margin-right: 50%;
 }
 
 /* Favorites */
