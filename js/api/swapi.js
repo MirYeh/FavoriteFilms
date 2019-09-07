@@ -7,7 +7,7 @@ const FILMS_CACHE = {}
  * @param {*} callback 
  */
 function getFilms(callback) {
-    console.log("getting films...");
+    console.log("getting films from API");
     fetch(baseUrl).then((response) => {
         return response.json();
     }).then((data) => {

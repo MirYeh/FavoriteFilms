@@ -5,8 +5,6 @@ const filmsWrapper = document.body.querySelector('.films-wrapper');
  * @param {*} films to display on DOM
  */
 function renderFilms(films) {
-    console.log('renderFilms with:');
-    console.log(films);
     films.forEach(film => {
         renderFilm(film);
     });
@@ -63,7 +61,6 @@ function filmTemplate(film) {
 function renderFavIcon(filmId) {
     let favImg = document.body.querySelector(`#film-${filmId}`);
     let isFav = toggleFavorite(filmId);
-    console.debug(`re-render fav icon as ${isFav}`)
     favImg = getFavIcon(filmId);
     
     // TODO: ugly reload, check how to make re-render smooth

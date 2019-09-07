@@ -11,8 +11,6 @@ function setFilmCache(films) {
     films.forEach(film => {
         all[withFilmKey(film.id)] = film;
     });
-    console.log(`setting to cache...`);
-    console.log(all);
     storage.setItem(cacheKey, JSON.stringify(all));
 }
 
@@ -21,8 +19,6 @@ function setFilmCache(films) {
  * @returns a map of key-value filmId and film information.
  */
 function getFilmCache() {
-    console.log('film cache:');
-    console.log(JSON.parse(storage.getItem(cacheKey)));
     return JSON.parse(storage.getItem(cacheKey));
 }
 
@@ -56,15 +52,11 @@ function getFavorites(callback) {
 
     Object.keys(storage).forEach(filmId => {
         if (filmId != cacheKey) {
-            console.log(`filmId ${filmId}`);
-            console.log(cache[filmId]);
             favorites.push(cache[filmId]);
         }
     });
 
     if (favorites && favorites.length > 0) {
-        console.log('calling back');
-        console.log(favorites);
         callback(favorites);
     } else {
         alert("No favorites");
