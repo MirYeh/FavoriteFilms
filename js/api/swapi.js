@@ -1,6 +1,5 @@
 const schema = "https";
 const baseUrl = `${schema}://swapi.co/api/films`;
-const FILMS_CACHE = {}
 
 /**
  * Get all films from Swapi.co
@@ -32,10 +31,10 @@ function mapToFilm(result) {
     let created = result.created.split("T")[0];
     let splitUrl = result.url.split("/")
     let id = splitUrl[splitUrl.length - 2];
-    let aaa = `${created}, produced by ${producer}, directed by ${director}`;
+    let details = `${created}, produced by ${producer}, directed by ${director}`;
     return {
         title: result.title,
-        details: aaa,
+        details: details,
         description: result.opening_crawl,
         id: id
     }
